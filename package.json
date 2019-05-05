@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +14,8 @@
     "axios": "^0.18.0",
     "hapi": "^18.1.0",
     "hapi-alive": "^2.0.1",
-    "hapi-pino": "^5.4.1"
-  }
+    "hapi-pino": "^5.4.1",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
